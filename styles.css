@@ -418,12 +418,12 @@ footer{
         .section {
             .container {
                 textarea{
-                    padding: 2rem;
+                    padding: 3rem 2rem;
                 }
                 
             }
             .result-container{
-                padding: 2rem
+                padding: 3rem 2rem
             }
         }
     }
