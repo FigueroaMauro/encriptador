@@ -93,7 +93,7 @@ function decrypt() {
 
     let textToDecrypt = getHTML("#area").value;
     let text = replaceDecrypText(textToDecrypt);
-    animateText(text, "DESCIFRANDO CÓDIGO...", "CÓDIGO DESCIFRADO CON ÉXITO");
+    animateText(text, "DESCIFRANDO CÓDIGO...", "¡CÓDIGO DESCIFRADO CON ÉXITO!");
 }
 
 function replaceDecrypText(texto) {
