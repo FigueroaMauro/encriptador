@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecriptador de texto</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Encriptador de texto <span><a href="https://www.aluracursos.com/" target="_blank">Alura</a></span></h1>
+    </header>
+
+    <main>
+        <section class="section-text section">
+            <div class="container">
+                <button id="btn-trash"><ion-icon name="trash-outline" id="trash"></ion-icon></button>
+
+                <textarea name="area" id="area" placeholder="Ingrese el texto aquí..."></textarea>
+
+                <div class="btn-container">
+                    <div class="warning-container">
+                        <ion-icon name="warning-outline" id="icon-warning"></ion-icon>
+                        <p>Sólo funciona con letras minúsculas y sin acentos.</p>
+                    </div>
+                    <input type="button" value="Encriptar" id="btn-encrypt" class="btn">
+                    <input type="button" value="Desencriptar" id="btn-decrypt" class="btn">
+                    <div class="ocultar" id="error-container">
+                        <ion-icon name="alert-circle-outline" id="icon-error"></ion-icon>
+                        <p id="text-error"></ion-icon></ion-icon>El texto no puede estar vacío.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-result section">
+            <div class="container">
+                <div class="result-container">
+                    <span id="code-title" class="ocultar">DESCIFRANDO CÓDIGO...</span>
+                    <p id="text-encrypted">
+                        0110001 00011101 01010101101 0110001 00011101 00111001 0010101110
+                        0110001 00011101 00111001 0010101110 01010101101 0110001 00011101 00111001 0010101110
+                        01010101101
+                        0110001 00011101 00111001 0010101110 01010101101 0110001 00011101 00111001 0010101110 0101010110
+                        0110001 00011101 00111001 0010101110 01010101101 0110001 00011101 00111001 0010101110 0101010110
+                        0110001 00011101 00111001 0010101110 01010101101 0110001 00011101 00111001 0010101110 0101010110
+                        0110001 00011101 00111001 0010101110 01010101101 0110001 00011101 00111001 0010101110 0101010110
+                    </p>
+                </div>
+                <div class="btn-copy-container">
+                    <input type="button" value="Copiar" id="btn-copy" class="btn">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by FM Developer</p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
