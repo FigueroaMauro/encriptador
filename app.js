@@ -47,7 +47,7 @@ function validate() {
 }
 
 function validateError() {
-    let text = getText().trim();
+    let text = getHTML("#area").value.trim();
     if (text == "") {
         return "El texto no debe estar vacío."
     }
@@ -148,10 +148,6 @@ function animateText(text, message, finalMessage) {
         title.innerHTML = finalMessage;
         encryptText.innerHTML = text;
     }, 3500)
-}
-
-function getText() {
-    return getHTML("#area").value;
 }
 
 function getHTML(elemento) {
