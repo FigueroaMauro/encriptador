@@ -299,6 +299,15 @@ footer{
     #area {
         font-size: 1rem;
     }
+
+    @media (max-height: 800px){
+        .warning-container{
+            top: 1rem !important ;
+        }
+        .error-container{
+            bottom: 1rem !important;
+        }
+    }
 }
 
 @media (max-width: 1350px) {
@@ -399,14 +408,7 @@ footer{
         }
     }
 
-    @media (max-height: 800px){
-        .warning-container{
-            top: 1rem !important ;
-        }
-        .error-container{
-            bottom: 1rem !important;
-        }
-    }
+
 }
 
 @media (max-width: 450px) {
