@@ -106,6 +106,7 @@ main {
             display: flex;
             flex-direction: column;
 
+            
             #btn-trash {
                 position: absolute;
                 right: 1rem;

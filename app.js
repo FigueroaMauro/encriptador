@@ -22,6 +22,7 @@ btnCopy.addEventListener("click", () => {
 let textArea = getHTML("#area");
 let textEncrypted =  getHTML("#text-encrypted").innerHTML;
 textArea.value = textEncrypted;
+navigator.clipboard.writeText(textEncrypted);
 btnCopy.value = "¡Copiado!"
 });
 
@@ -63,29 +64,29 @@ function validateError() {
 
 function replaceEncryptText(texto) {
 
-    let resultado = "";
+    let result = "";
     for (let i = 0; i < texto.length; i++) {
         if (texto[i] == "a") {
-            resultado += "ai";
+            result += "ai";
         }
         else if (texto[i] == "e") {
-            resultado += "enter";
+            result += "enter";
         }
         else if (texto[i] == "i") {
-            resultado += "imes";
+            result += "imes";
         }
         else if (texto[i] == "o") {
-            resultado += "ober";
+            result += "ober";
         }
         else if (texto[i] == "u") {
-            resultado += "ufat";
+            result += "ufat";
         }
         else {
-            resultado += texto[i]
+            result += texto[i]
         }
     }
 
-    return resultado;
+    return result;
 }
 
 function decrypt() {
